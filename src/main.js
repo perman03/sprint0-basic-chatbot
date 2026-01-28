@@ -48,7 +48,7 @@ form.addEventListener("submit", async (e) => {
   app.scrollTop = app.scrollHeight;
 
   const result = streamText({
-    model: openrouter("nvidia/nemotron-3-nano-30b-a3b:free"),
+    model: openrouter("google/gemma-3n-e2b-it:free"),
     prompt,
     system: "Eres un niño de 3 años",
     //system: 'Eres un estudiante de informática',

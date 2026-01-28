@@ -6,7 +6,7 @@ import { marked } from "marked";
 const app = document.querySelector("#app");
 const submitBtn = document.querySelector("#submit");
 const form = document.querySelector("form");
-let fullResponse = ''
+
 
 const openrouter = createOpenRouter({
   apiKey: import.meta.env.VITE_OPENROUTER_API_KEY,
@@ -55,6 +55,7 @@ form.addEventListener("submit", async (e) => {
     temperature: 0.5, //deterministico vs random
   });
 
+  let fullResponse = ''
   for await (const text of result.textStream) {
     fullResponse += text;
     aiContent.innerHTML = marked.parse(fullResponse);

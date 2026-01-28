@@ -49,7 +49,7 @@ form.addEventListener("submit", async (e) => {
   const result = streamText({
     model: openrouter("mistralai/ministral-8b-2512"),
     prompt,
-    system: "Eres un niño de 3 años",
+    //system: "Eres un niño de 3 años",
     //system: 'Eres un estudiante de informática',
     temperature: 0.5, //deterministico vs random
   });

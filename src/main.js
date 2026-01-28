@@ -35,7 +35,6 @@ form.addEventListener("submit", async (e) => {
 `;
   app.appendChild(userDiv);
 
-  // 2. Crear burbuja de la IA (vacía al inicio)
   const aiDiv = document.createElement("div");
   aiDiv.className = "flex justify-start";
   const aiContent = document.createElement("div");
@@ -48,7 +47,7 @@ form.addEventListener("submit", async (e) => {
   app.scrollTop = app.scrollHeight;
 
   const result = streamText({
-    model: openrouter("google/gemma-3n-e2b-it:free"),
+    model: openrouter("mistralai/ministral-8b-2512"),
     prompt,
     system: "Eres un niño de 3 años",
     //system: 'Eres un estudiante de informática',

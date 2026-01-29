@@ -1,1 +1,44 @@
 @import 'tailwindcss'; 
+
+/* Contenedor de la tabla con scroll horizontal */
+#app table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+#app th {
+    background-color: #334155; /* Slate-700 */
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid #475569;
+}
+
+#app td {
+    padding: 8px 12px;
+    border: 1px solid #475569;
+}
+
+#app tr:nth-child(even) {
+    background-color: #1e293b; /* Slate-800 */
+}
+
+#app {
+    /* Le damos un fondo ligeramente más claro que el body para dar profundidad */
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 1.5rem;
+    border: 0px solid rgba(71, 85, 105, 0.3);
+    padding: 2rem; /* Más espacio interno */
+}
+
+/* Mejoramos el scrollbar para que sea sutil */
+#app::-webkit-scrollbar {
+    width: 6px;
+}
+#app::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 10px;
+}

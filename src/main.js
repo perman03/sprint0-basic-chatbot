@@ -69,7 +69,7 @@ console.count("submit fired");
 
     try {
       const result = streamText({
-        model: openrouter("z-ai/glm-4.5-air:free"),
+        model: openrouter("google/gemini-3-flash-preview"),
         //model: openrouter("meta-llama/llama-3.3-70b-instruct:free"),
         prompt,
         system: QAGema,

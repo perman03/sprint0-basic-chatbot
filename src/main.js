@@ -69,7 +69,8 @@ console.count("submit fired");
 
     try {
       const result = streamText({
-        model: openrouter("meta-llama/llama-3.3-70b-instruct:free"),
+        model: openrouter("z-ai/glm-4.5-air:free"),
+        //model: openrouter("meta-llama/llama-3.3-70b-instruct:free"),
         prompt,
         system: QAGema,
         temperature: 0.3,
